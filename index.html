@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Login Central</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/rede.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="Transparencia"></div>
+
+      <div class="conteudo">
+        <h1>Avance</h1>
+        <p onclick="abrir()">Login</p>
+      </div>
+
+      <div class="fechar">
+        <p onclick="fechar()">X</p>
+      </div>
+    </header>
+    
+    <main>
+      <div class="imagemDiv">
+        <img src="./img/3572691.jpg" alt="Icone aleatório sobre desing da empresa Avance">
+      </div>
+
+      <div class="formulario">
+        <h1>Faça seu login<strong>.</strong></h1>
+        <form action="/enviar_dados" method="POST">
+          <label for="email"><p>Email</p></label>
+          <input class="inputdados" type="email" name="email" id="email" required autocomplete="off">
+          <label for="senha"><p>Senha</p></label>
+          <input class="inputdados" type="password" name="senha" id="senha" required autocomplete="off">
+          <a class="esquicisenha" href="#">Esquici a senha</a>
+          <button class="logar" type="submit">Entrar</button>
+          <a class="criarconta" href="#">Ainda não tem uma conta</a>
+        </form>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

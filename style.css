@@ -1,0 +1,167 @@
+@media all {
+  /*gerais*/
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  html {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  /*header*/
+
+  /*header - transparência*/
+
+  .Transparencia{
+    position: fixed;
+    background-color: #213a40c1;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: none;
+  }
+
+  /*header - Barra principal*/
+
+  .conteudo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: #213A40;
+  }
+
+  .conteudo p{
+    cursor: pointer;
+  }
+
+  /*header - Botão de fechar*/
+
+  .fechar{
+    z-index: 2;
+    color:white;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    background-color: #213A40;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    display: none;
+  }
+
+  /*main*/
+
+  /*main - imagem de fundo*/
+
+  .imagemDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80vw;
+    max-width: 600px;
+    min-width: 350px;
+  }
+
+  .imagemDiv img{
+    width: 100%;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+  }
+
+  @keyframes float{
+    0%{
+      transform: translateY(0px);
+    }
+    50%{
+      transform: translateY(-20px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
+
+  /*main - Formulário*/
+
+  .formulario{
+    background-color: #213A40;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    min-width: 250px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    display: none;
+  }
+
+  .formulario strong{
+    color: #A7F205;
+    margin: 0px 4px;
+  }
+
+  .formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    color: #A7F205;
+  }
+
+  .inputdados{
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #A7F205;
+    outline: none;
+    color: white;
+  }
+
+  .inputdados:focus{
+    color: #89CD00
+  }
+
+  .esquicisenha{
+    text-align: right;
+    margin: 10px 0px;
+    color: rgba(255, 255, 255, 0.584);
+    font-size: 13px;
+  }
+
+  .logar{
+    outline: none;
+    padding: 8px;
+    border-radius: 20px;
+    background-image: linear-gradient(to left,#A7F205, #89CD00,#89CD00,#A7F205);
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .criarconta{
+    text-align: center;
+    margin: 10px 0px;
+    color: rgba(255, 255, 255, 0.584);
+    font-size: 14px;
+  }
+}
